@@ -1,5 +1,11 @@
+import CVFormPage from './pages/CVFormPage';
+
 function App() {
-  return <div className="text-lg text-center">Hello World</div>;
+  return (
+    <div>
+      <CVFormPage />
+    </div>
+  );
 }
 
 export default App;

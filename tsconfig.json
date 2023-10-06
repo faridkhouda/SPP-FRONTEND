@@ -21,9 +21,13 @@
     "noFallthroughCasesInSwitch": true,
 
     "paths": {
-      "@": ["./src"]
-    }
+      "@": ["./src"],
+      "@features/*": ["./src/features/*"],
+      "@components": ["./src/components"]
+    },
+
+    "types": ["vite/client"]
   },
-  "include": ["src", "vitest-setup.ts"],
+  "include": ["src", "vitest-setup.ts", "tailwind.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
