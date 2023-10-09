@@ -17,6 +17,7 @@ module.exports = {
     },
     ecmaVersion: 'latest',
     sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
   },
   plugins: ['react-refresh'],
   rules: {
@@ -27,7 +28,14 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'import/no-extraneous-dependencies': [
       'error',
-      { devDependencies: ['**/*.test.js', '**/*.test.ts', 'vite.config.ts'] },
+      {
+        devDependencies: [
+          '**/*.test.js',
+          '**/*.test.ts',
+          'vite.config.ts',
+          'tailwind.config.ts',
+        ],
+      },
     ],
   },
 };
